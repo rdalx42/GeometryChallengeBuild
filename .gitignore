@@ -1,0 +1,4 @@
+node_modules/
+# music copied in by buildapkwithaudio (it ships inside the APK)
+www/assets/
+.audio-cache/

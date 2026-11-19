@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-a: #2a0636;
+            --bg-b: #6b1580;
+            --fg: #ffffff;
+            --muted: #e6c9ef;
+        }
+        * { box-sizing: border-box; }
+        html, body { margin: 0; min-height: 100%; }
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 16px;
+            background: radial-gradient(circle at 50% 30%, var(--bg-b), var(--bg-a) 70%);
+            color: var(--fg);
+            font-family: Roboto, Arial, sans-serif;
+            text-align: center;
+        }
+        main { max-width: 520px; width: 100%; }
+        h1 {
+            margin: 0 0 8px;
+            font-size: clamp(32px, 9vw, 56px);
+            font-weight: 900;
+            letter-spacing: 1px;
+            line-height: 1.05;
+        }
+        p.sub { margin: 0 0 32px; color: var(--muted); font-size: 18px; }
+        .install {
+            display: inline-block;
+            padding: 18px 40px;
+            border: 4px solid var(--fg);
+            color: var(--fg);
+            text-decoration: none;
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            transition: background .15s, color .15s, transform .1s;
+        }
+        .install:hover, .install:focus-visible { background: var(--fg); color: var(--bg-a); outline: none; }
+        .install:active { transform: scale(.97); }
+        ol {
+            margin: 36px auto 0;
+            padding-left: 20px;
+            max-width: 420px;
+            text-align: left;
+            color: var(--muted);
+            line-height: 1.6;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>GEOMETRY CHALLENGE</h1>
+        <p class="sub">Android app</p>
+
+        <a class="install" id="install" href="GeometryChallenge.apk" download="GeometryChallenge.apk"
+           type="application/vnd.android.package-archive">INSTALL</a>
+
+        <ol>
+            <li>Tap <b>INSTALL</b> on your Android phone to download the app.</li>
+            <li>Open the downloaded file. If Android asks, allow your browser to install unknown apps.</li>
+            <li>Tap <b>Install</b>, then open Geometry Challenge.</li>
+        </ol>
+    </main>
+</body>
+</html>
